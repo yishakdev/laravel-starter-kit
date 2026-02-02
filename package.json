@@ -6,15 +6,12 @@
         "build": "vite build",
         "dev": "vite",
         "lint": "eslint . --fix",
-        "format": "prettier --write resources/",
-        "format:check": "prettier --check resources/",
-        "prepare": "husky",
-        "test": "php artisan test"
+        "format": "prettier --write resources/"
     },
     "lint-staged": {
         "**/*.{js,jsx,ts,tsx,vue,css,scss,md,json}": [
             "eslint --fix",
-            "prettier --write"
+            "prettier --write resources/"
         ],
         "**/*.php": [
             "vendor\\bin\\pint",
