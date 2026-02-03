@@ -6,7 +6,8 @@
         "build": "vite build",
         "dev": "vite",
         "lint": "eslint . --fix",
-        "format": "prettier --write resources/"
+        "format": "prettier --write resources/",
+        "prepare": "husky"
     },
     "lint-staged": {
         "**/*.{js,jsx,ts,tsx,vue,css,scss,md,json}": [
